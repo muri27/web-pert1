@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Berkenalan dengan HTML</title>
+	<!-- pembuatan id dan hanya bisa digunakan 1 kali menggunakan hashtag cara manggilnya id="nama-id"-->
+	<!-- pembuatan class dan hanya bisa digunakan berkali menggunakan . cara manggilnya class="nama-class"-->	
+	<!-- pembuatan border di css table,th,td-->
+	<!--border collapse biar border tidak doble garisnya-->
+	<style type="text/css">
+		#warna-darkblue { 
+			color: darkblue;
+		}
+
+		.padding-10px{
+			padding: 10px;
+		}
+
+		table, th, td{
+			border : 2px solid red;
+		}
+
+		.table-style{
+			border-collapse:collapse;
+			background-color: black;
+			color:green;
+		}
+	</style>
+</head>
+<body>
+		<h1>Judul yang mengawali petualanganku</h1>
+
+		<p>Sebuah paragraf yang mendeskripsikan jalanku</p>
+
+		<button>Tombol untuk memulai hariku</button>
+
+		<h2>Sebuah Afirmasi</h2>
+
+	<hr>
+		<input>
+
+	<!-- ini adalah tag unordered list -->
+
+		<ul>
+			<li>Aku bisa</li>
+			<li>Aku bisa</li>
+			<li>Aku bisa</li>
+		</ul>
+
+	<!-- ini adalah tag ordered list -->
+
+		<ol>
+			<li>Aku Bisa</li>
+			<li>Aku Bisa</li>
+			<br><br><!-- jeda jeda kehidupan -->
+			<li>Aku Bisa</li>
+		</ol>
+
+		<p>
+			Kampusku : 
+			<br>
+			<!-- text decoration buat ngilangin underline-->
+			<a href="https://www.ugm.ac.id" title="Link UGM" target="_blank" style="text-decoration: none; color: red">UGM</a><!-- kebuka di tab baru-->
+			<br>
+			<a href="https://www.ugm.ac.id" title="Link UGM" style="text-decoration: none; color: pink">UGM</a><!--kebuka di tab yg sama-->
+		</p>
+
+	<hr>
+	<!-- Penggunaan tag img-->
+		<h1>Ini adalah gambar dari internet (link)</h1>
+			<img src="https://ugm.ac.id/galleries/crop/13137--730x420px.jpeg" alt="Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana">
+		<a href="https://ugm.ac.id/id/berita/19065-kuliah-umum-awali-tahun-akademik-baru-program-pascasarjana" style="text-decoration: none; color: black" target="_blank"><h2>Kuliah Umum Awali Tahun Akademik Baru Program Pascasarjana</h2></a>
+
+		<p>UGM menyelenggarakan Kuliah Perdana Mahasiswa Baru Program Pascasarjana Semester Genap Tahun Akademik 2019/2020, Senin (24/2) di Auditorium Sekolah Pascasarjana UGM. Pada penerimaan mahasiswa kali ini, UGM menerima mahasiswa baru dari [...]</p>
+
+	<hr>
+		<h1>Ini adalah gambar dari lokal</h1>
+		<img src="IMG/Penguins.jpg" alt="Penguins">
+
+	<hr>
+	<!-- penggunaan bold, underline, italic-->
+		<p>Ini contoh penggunaan <b>BOLD</b></p>
+		<p>Ini contoh penggunaan <u>UNDERLINE</u></p>
+		<p>Ini contoh penggunaan <i>ITALIC</i></p>
+
+	<hr>
+	<!-- Penggunaan Style-->
+		<ol>
+			<li style="color: red">Merah</li>
+			<li style="color: blue">Biru</li>
+			<li style="color: navy">Navy</li>
+			<li style="color: #b48372">Kulit</li>
+			<li style="color: #873c64">Kustom</li>
+		</ol>
+
+	<hr>
+	<!--Membuat tabel-->
+	<table class="table-style" >
+		<tr align="center"><!-- table row (baris)-->
+			<th rowspan="2" class="padding-10px">No.</th><!--table head (Judul Kolom) -->
+			<th rowspan="2" class="padding-10px">Nama</th>
+			<th rowspan="2" class="padding-10px">Jabatan</th>
+			<th colspan="2" class="padding-10px">Status</th>
+			<th rowspan="2" class="padding-10px">Aksi</th>
+		</tr>
+		<tr align="center">
+			<th class="padding-10px">2019</th>
+			<th class="padding-10px">2020</th>
+		</tr>
+
+
+		<tr align="center">
+			<td class="padding-10px">1.</td><!-- isi dari kolom-->
+			<td class="padding-10px">Nanang</td><!-- rowspan dan colspan buat merge tabel row = baris col = column-->
+			<td class="padding-10px">Ketua</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">Lajang</td>
+			<td class="padding-10px">
+				<button style="background-color: black; color: green">Edit</button>
+				<button style="background-color: black; color: green">Delete</button>
+			</td>
+		</tr>
+
+		<tr align="center">
+			<td class="padding-10px" id="warna-darkblue">2.</td>
+			<td class="padding-10px" id="warna-darkblue">Arif</td>
+			<td class="padding-10px" id="warna-darkblue">Wakil</td>
+			<td class="padding-10px" id="warna-darkblue">Lajang</td>
+			<td class="padding-10px" id="warna-darkblue">Lajang</td>
+			<td class="padding-10px" id="warna-darkblue">
+				<button style="background-color: black; color: darkblue">Edit</button>
+				<button style="background-color: black; color: darkblue">Delete</button>
+			</td>
+		</tr>
+	</table>
+
+	<hr>
+	<!-- Membuat input-->
+	<h1>Form Login/Register</h1>
+
+	<form>
+		<input type="text" placeholder="Nama">
+		<br>
+		<br>
+		<input type="password" placeholder="Password">
+		<br>
+		<br>
+		<input type="submit" value="Login">
+		<input type="submit" value="Register">
+	</form>
+	
+</body>
+</html>
