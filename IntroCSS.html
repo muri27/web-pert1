@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--Inline CSS-->
+<html>
+<head>
+	<title>Intro CSS</title>
+
+	<style type="text/css">
+		/*Selector in css*/
+		section{
+			background-color:#073c64;
+			height: 100px;
+		}
+
+		/*Id untuk tag unik*/
+		#background-tomato {
+			background-color: tomato;
+			height:  100px;
+			width: 300px;
+		}
+
+		/*Class*/
+		.color-violet{
+			color: violet;
+
+		}
+
+		.color-white{
+			color: white;
+		}
+
+
+		/*Menunjukkan class ini penting dan tidak bisa di overwrite berlaku juga untuk selector dan id*/
+		.background-black{
+			background-color:  black!important;
+		}
+
+		/*grouping Class*/
+		h3, h4, h5{
+			color: white;
+		}
+
+		/*Descendant Class*/
+		section h1{
+			background-color: gray;
+		}
+
+		table{
+			border-collapse: collapse;
+			border:1px solid black;
+		}
+
+		table tr th{
+			background-color: yellow;
+		}
+
+		table tr th,
+		table tr td{
+			padding: 5px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<section>
+		<h3 class="color-violet">VIOLET</h3>
+
+	</section>
+
+	<br>
+	<hr>
+
+	<section >
+		<div id="background-tomato">
+			<h2 class="color-white">JUDUL YANG SANGAT INDAH</h2>
+
+		</div>
+	</section>
+
+	<br>
+	<hr>
+
+	<section>
+		<div id="background-tomato">
+			<h1 class="color-white background-black">VIOLET</h1>
+
+		</div>
+
+
+	</section>
+
+	<br>
+	<hr>
+
+	<section>
+		<h3>WKWKWK</h3>
+		<h4>WKWKWK</h4>
+		<h5>WKWKWK</h5>
+	</section>
+
+	<section>
+		<h1>WKWK</h1>
+	</section>
+
+	<div>
+		<h1>WKWK</h1>
+	</div>
+
+	<table border="1">
+		<tr>
+			<th>No.</th>
+			<th>Nama</th>
+			<th>Kelas</th>
+		</tr>
+
+		<tr>
+			<td>1.</td>
+			<td>Nanang</td>
+			<td>TRPL B</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
